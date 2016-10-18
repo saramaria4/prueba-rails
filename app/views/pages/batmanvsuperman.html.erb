@@ -1,28 +1,35 @@
-<h1>Batman versus Superman</h1>
-<p>¿Quién ganara el Desafío Latam?</p>
-<p>Vota por tu favorito</p>
-
-
-
- <div class="row">
-
- 	<div class="col-sm-4">
- 		<button type="submit"> Batman </button>
- 		<p><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.jpg"></p>
- 		<button type="submit"> Superman </button>
- 		<p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Superman_shield.svg/1280px-Superman_shield.svg.png"></p>
- 	 </div>
-
+<div class="container">
+	<h1>Batman versus Superman</h1>
+	<p>¿Quién ganara el Desafío Latam?</p>
+	<p>Vota por tu favorito</p>
 </div>
 
-<form action="<%= user_voto_path %>"  method="post">
-<%= hidden_field_tag :authenticity_token,  form_authenticity_token %>
+ <div class="container">
 
-	<input name="nombre">
-	<input name="mail">
-	<input type="submit">
+ 	<div class="">
+ 		<button type="submit"> Batman </button>
+ 		<button type="submit"> Superman </button>
+ 		<table style="width:100%">
+  		<tr>
+   		 <th><p><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.jpg" rel="lightbox" class="col-4" height="500px" width="500"></p></th>
+         <th><p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Superman_shield.svg/1280px-Superman_shield.svg.png" rel="lightbox" class="col-4" height="500px" width="500"></p></th>
+ 		
+ 		 </div>
+
+ 	<form action="<%= user_voto_path %>"  method="post">
+	<%= hidden_field_tag :authenticity_token,  form_authenticity_token %>
+
+		<h2>Ingresa tus datos</h2>
+
+		Nombre <input name="nombre">
+		Mail <input name="mail">
+		Votar <input type="submit">
 	
-</form>
+	</form>
+ 		
+</div>
+
+
 
 
 

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/superman'
   get 'user/voto'
+  post 'user/voto'
 
   get 'pages/batman'
 

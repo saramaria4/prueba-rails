@@ -6,16 +6,13 @@ class PagesController < ApplicationController
   def superman
 	redirect_to pages_superman_path
   end
-end
 
-
-def voto
+def guardar
    	@name = params[:nombre]
   	@mail = params[:mail]
 
-  	User.create(name: @name,  mail: @mail)
-  	redirect_to user_guardar_path 
+  	User.voto(name: @name,  mail: @mail).save
+  	redirect_to user_voto_path
   end
 
-
- 
+end
