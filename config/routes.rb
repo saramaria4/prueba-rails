@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'experiments/page1'
+
+  get 'experiments/page2'
+
+  get 'experiments/page3'
+
+  get 'eriments/page1'
+
+  get 'eriments/page2'
+
+  get 'eriments/page3'
+
   get 'pages/superman'
   get 'user/voto'
   post 'user/voto'
