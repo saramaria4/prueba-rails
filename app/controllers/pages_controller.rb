@@ -9,5 +9,13 @@ class PagesController < ApplicationController
 end
 
 
+def voto
+   	@name = params[:nombre]
+  	@mail = params[:mail]
+
+  	User.create(name: @name,  mail: @mail)
+  	redirect_to user_guardar_path 
+  end
+
 
  
