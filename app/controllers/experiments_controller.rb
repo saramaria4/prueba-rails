@@ -6,5 +6,7 @@ class ExperimentsController < ApplicationController
   end
 
   def page3
+  	@experiments= params[:experiments]
+  	
   end
 end
